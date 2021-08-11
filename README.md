@@ -1,6 +1,6 @@
 NVIDIA社のGPUを積んだPCが必要。
 ドライバーとCUDAがインストールされている場合は以下のように出力される。
-
+```
 $nvidia-smi
 Thu Aug  5 22:36:16 2021       
 +-----------------------------------------------------------------------------+
@@ -26,21 +26,22 @@ Thu Aug  5 22:36:16 2021
 |    0   N/A  N/A      2438      G   /usr/bin/gnome-shell               27MiB |
 |    0   N/A  N/A      2904      G   ...AAAAAAAAA= --shared-files       27MiB |
 +-----------------------------------------------------------------------------+
+```
 
 ##Jupyter Notebookでの実行方法
 
 [CPU]
-'''
+```
 inPath = "test.jpg"
 outPath = "test_cpuout.jpg"
 blackWhite(inPath , outPath , mode = "luminosity",log = 1)
-'''
+```
 
 [GPU]
-'''
+```
 inPath = "test.jpg"
 outPath = "test_gpuout.jpg"
 CudablackWhite(inPath , outPath , mode = "luminosity" , log = 1)
-'''
+```
 
 
