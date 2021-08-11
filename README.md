@@ -30,17 +30,17 @@ Thu Aug  5 22:36:16 2021
 ##Jupyter Notebookでの実行方法
 
 [CPU]
-"""
+'''
 inPath = "test.jpg"
 outPath = "test_cpuout.jpg"
 blackWhite(inPath , outPath , mode = "luminosity",log = 1)
-"""
+'''
 
 [GPU]
-"""
+'''
 inPath = "test.jpg"
 outPath = "test_gpuout.jpg"
 CudablackWhite(inPath , outPath , mode = "luminosity" , log = 1)
-"""
+'''
 
 
